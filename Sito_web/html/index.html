@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sellit!</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="../immagini/logo.ico">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <div id="headerContainer"></div>
+
+        <div id="selectedCategory"></div>
+
+        <button onclick="inserisciAnnuncio()" id="inserisciAnnuncio">+ Inserisci annuncio</button>
+
+        <select id="luogo"></select>
+        
+        <select id="ordine">
+            <option value="recente">Dal più recente</option>
+            <option value="meno-recente">Dal meno recente</option>
+            <option value="meno-caro">Dal meno caro</option>
+            <option value="caro">Dal più caro</option>
+        </select>
+
+        <div id="listaAnnunci"></div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../javascript/index.js"></script>
+    </body>
+</html>

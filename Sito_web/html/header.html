@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="logoInterattivo">
+            <img src="../immagini/logo.png" id="immagineLogo">
+            <h1 id="logoSellit">Sellit!</h1>
+        </div>
+
+        <div id="searchBar">
+            <input type="text" id="searchTitle">
+            <button onclick="searchTitle()" id="searchButton">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+
+        <button id="userLogged"></button>
+        <div id="dropdownMenu">
+            <a href="mieiAnnunci.html">I miei annunci</a>
+            <a id="paginaPassword" href="cambioPassword.html">Cambia password</a>
+            <a href="eliminaAccount.html">Elimina account</a>
+            <a id="pulsanteDisconnetti" onclick="logout()">Disconnetti</a>
+        </div>
+
+        <div id="cat_Motori">Motori</div>
+        <div id="dropdownMotori">
+            <a id="Automobili">Automobili</a>
+            <a id="Moto">Moto</a>
+            <a id="Accessori auto">Accessori auto</a>
+            <a id="Accessori moto">Accessori moto</a>
+        </div>
+
+        <div id="cat_Elettronica">Elettronica</div>
+        <div id="dropdownElettronica">
+            <a id="Informatica">Informatica</a>
+            <a id="Audio/Video">Audio/Video</a>
+            <a id="Telefonia">Telefonia</a>
+        </div>
+
+        <div id="cat_OggettiCasa">Oggetti per la casa</div>
+        <div id="dropdownOggettiCasa">
+            <a id="Elettrodomestici">Elettrodomestici</a>
+            <a id="Abbigliamento">Abbigliamento</a>
+        </div>
+
+        <div id="cat_SportHobby">Sport e hobby</div>
+        <div id="dropdownSportHobby">
+            <a id="Musica">Musica</a>
+            <a id="Film">Film</a>
+            <a id="Libri">Libri</a>
+            <a id="Sport">Sport</a>
+        </div>
+
+        <div id="cat_Immobili">Immobili</div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../javascript/header.js"></script>
+    </body>
+</html>

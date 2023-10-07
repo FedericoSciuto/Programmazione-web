@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Accesso</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="../immagini/logo.ico">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <div id="logo">
+            <img src="../immagini/logo.png" id="immagineLogo">
+            <h1 id="Sellit">Sellit!</h1>
+        </div>
+        
+        <div id="login">
+            <h2>Pagina di accesso</h2>
+            
+            <div id="message"></div>
+            
+            <p>Email</p>
+            <input type="text" title="Inserisci la tua email" id="email" name="email" required>
+            <p class="error" id="emailError">* Inserisci l'email</p>
+            
+            <p>Password</p>
+            <input type="password" title="Inserisci la tua password" id="password" name="password" required>
+            <p class="error" id="passwordError">* Inserisci la password</p>
+            
+            <button onclick="login()">Accedi</button>
+
+            <a href="recupero.html" id="link">Hai dimenticato la password?</a>
+
+            <hr class="hr-line">
+            
+            <button onclick="reindirizza()" id="alternativeButton">Crea nuovo account</button>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../javascript/login.js"></script>
+    </body>
+</html>

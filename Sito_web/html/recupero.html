@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reimposta password</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="../immagini/logo.ico">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <div id="logo">
+            <img src="../immagini/logo.png" id="immagineLogo">
+            <h1 id="Sellit">Sellit!</h1>
+        </div>
+
+        <div id="recupero">
+            <h2>Reimposta password</h2>
+            
+            <div id="message"></div>
+            
+            <p>Email</p>
+            <input type="text" title="Inserisci la tua email" id="email" name="email" required>
+            <p class="error" id="emailError">* Inserisci l'email</p>
+            
+            <button onclick="invio()">Invia</button>
+
+            <hr class="hr-line">
+
+            <button onclick="reindirizza()" id="alternativeButton">Accedi</button>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../javascript/recupero.js"></script>
+    </body>
+</html>

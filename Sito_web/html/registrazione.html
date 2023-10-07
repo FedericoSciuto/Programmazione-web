@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registrazione</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="../immagini/logo.ico">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <div id="logo">
+            <img src="../immagini/logo.png" id="immagineLogo">
+            <h1 id="Sellit">Sellit!</h1>
+        </div>
+
+        <div id="registrazione">
+            <h2>Creazione account</h2>
+            
+            <div id="message"></div>
+            
+            <p>Nome utente</p><p id="info" title="Sono ammessi:
+            - Numeri,
+            - Lettere (maiuscole e minuscole),
+            - Underscore,
+            - Lunghezza minima 3 caratteri,
+            - Lunghezza massima 20 caratteri.">&#x1F6C8;</p>
+            <input type="text" title="Inserisci il nome utente" id="username" name="username" required>
+            <p class="error" id="usernameError">* Inserisci il nome utente</p>
+            <p class="require" id="usernameRequire">* Inserisci un nome utente valido</p>
+            
+            <p>Email</p>
+            <input type="text" title="Inserisci l'email" id="email" name="email" required>
+            <p class="error" id="emailError">* Inserisci l'email</p>
+            <p class="require" id="emailRequire">* Inserisci un'email valida</p>
+            
+            <p>Password</p><p id="info" title="Scegli una password con:
+            - Lunghezza minima 8 caratteri
+            - Lunghezza massima 16 caratteri">&#x1F6C8;</p>
+            <input type="password" title="Inserisci la password" id="password" name="password" required>
+            <p class="error" id="passwordError">* Inserisci la password</p>
+            <p class="require" id="passwordRequire">* Inserisci una password valida</p>
+            
+            <p>Numero di telefono</p>
+            <input type="text" title="Inserisci il numero di telefono" id="telefono" name="telefono" required>
+            <p class="error" id="telefonoError">* Inserisci il numero di telefono</p>
+            <p class="require" id="telefonoRequire">* Inserisci un numero di telefono valido</p>
+            
+            <p>Regione</p>
+            <select title="Seleziona una regione" id="regione" name="regione" required></select>
+            <p class="error" id="regioneError">* Seleziona la regione</p>
+            
+            <p>Provincia</p>
+            <select title="Seleziona una provincia" id="provincia" name="provincia" required></select>
+            <p class="error" id="provinciaError">* Seleziona la provincia</p>
+            
+            <button onclick="registrazione()">Registrati</button>
+
+            <hr class="hr-line">
+            
+            <p id="accountEsistente">Hai già un account?</p>
+            <button onclick="reindirizza()" id="alternativeButton">Accedi</button>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../javascript/registrazione.js"></script>
+    </body>
+</html>

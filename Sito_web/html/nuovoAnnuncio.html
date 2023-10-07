@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inserisci annuncio</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="../immagini/logo.ico">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <div id="headerContainer"></div>
+
+        <div id="nuovoAnnuncio">
+            <h2>Inserimento annuncio</h2>
+            
+            <div id="message"></div>
+            
+            <p>Categoria</p>
+            <select title="Seleziona la categoria dell'oggetto" id="categoria" name="categoria" required>
+                <option value="">-- Seleziona categoria --</option>
+                <option value="" disabled>Motori</option>
+                
+                <option value="Automobili">Automobili</option>
+                <option value="Moto">Moto</option>
+                <option value="Accessori auto">Accessori auto</option>
+                <option value="Accessori moto">Accessori moto</option>
+                
+                <option value="" disabled>Elettronica</option>
+                
+                <option value="Informatica">Informatica</option>
+                <option value="Audio/Video">Audio/Video</option>
+                <option value="Telefonia">Telefonia</option>
+                
+                <option value="" disabled>Oggetti per la casa</option>
+                
+                <option value="Elettrodomestici">Elettrodomestici</option>
+                <option value="Abbigliamento">Abbigliamento</option>
+                
+                <option value=""disabled>Sport e hobby</option>
+                
+                <option value="Musica">Musica</option>
+                <option value="Film">Film</option>
+                <option value="Libri">Libri</option>
+                <option value="Sport">Sport</option>
+
+                <option value="Immobili">Immobili</option>
+            </select>
+            <p class="error" id="categoriaError">* Seleziona la categoria</p>
+            
+            <p>Titolo</p>
+            <input type="text" title="Inserisci il titolo dell'annuncio" id="titolo" name="titolo" maxlength="50" required>
+            <p class="error" id="titoloError">* Inserisci il titolo dell'annuncio</p>
+            
+            <p>Descrizione</p>
+            <textarea title="Inserisci la descrizione dell'annuncio" id="descrizione" name="descrizione" maxlength="255" required></textarea>
+            <p class="error" id="descrizioneError">* Inserisci la descrizione dell'annuncio</p>
+            
+            <p>Condizioni</p>
+            <select title="Seleziona le condizioni dell'oggetto" id="condizioni" name="condizioni" required>
+                <option value="">-- Seleziona condizioni --</option>
+                <option value="Nuovo">Nuovo</option>
+                <option value="Usato - ottime condizioni">Usato - ottime condizioni</option>
+                <option value="Usato - buone condizioni">Usato - buone condizioni</option>
+                <option value="Usato - danneggiato">Usato - danneggiato</option>
+            </select>
+            <p class="error" id="condizioniError">* Seleziona le condizioni</p>
+            
+            <p>Prezzo</p><p id="info" title="Valore massimo: 2.000.000.000">&#x1F6C8;</p>
+            <p id="euro">€ <input type="text" title="Inserisci il prezzo richiesto" id="prezzo" name="prezzo">,00</p>
+            <p class="error" id="prezzoError">* Inserisci il prezzo richiesto</p>
+            <p class="require" id="prezzoRequire">* Inserisci un prezzo valido</p>
+            
+            <p>Foto</p>
+            <label for="foto" class="custom-file-input">Sfoglia</label>
+            <input type="file" id="foto" name="foto" accept=".jpg, .jpeg, .png">
+            <img id="previewImg">
+            <p class="error" id="fotoError">* Estensione dell'immagine non valida</p>
+            
+            <button onclick="inserimento()">Inserisci</button>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../javascript/nuovoAnnuncio.js"></script>
+    </body>
+</html>

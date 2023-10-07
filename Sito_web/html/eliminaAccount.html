@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eliminazione account</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="../immagini/logo.ico">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <div id="headerContainer"></div>
+        
+        <div id="eliminaAccount">
+            <h2>Eliminazione account</h2>
+            
+            <div id="message"></div>
+            
+            <p>Password</p>
+            <input type="password" title="Inserisci la password" id="password" name="password" required>
+            <p class="error" id="passwordError">* Inserisci la password</p>
+            
+            <button onclick="eliminaAccount()">Conferma</button>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../javascript/eliminaAccount.js"></script>
+    </body>
+</html>
